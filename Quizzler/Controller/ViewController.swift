@@ -21,7 +21,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var scoreLabel: UILabel!
     
     var quizBrain = QuizBrain()
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         

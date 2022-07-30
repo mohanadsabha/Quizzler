@@ -47,12 +47,13 @@ struct QuizBrain {
         if questionNumber + 1 < quiz.count {
             questionNumber += 1
         } else {
+            score = 0
             questionNumber = 0
         }
     }
     
     mutating func checkAnswer(_ userAnswer: String) -> Bool {
-        //Need to change answer to rightAnswer here. 
+        //Need to change answer to rightAnswer here.
         if userAnswer == quiz[questionNumber].rightAnswer {
             score += 1
             return true
